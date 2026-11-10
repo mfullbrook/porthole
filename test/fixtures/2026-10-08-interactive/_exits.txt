@@ -1,0 +1,7 @@
+lsof-listen.txt exit=0
+serve-status.json exit=0
+tailscale-self.json exit=0
+docker-ps.jsonl exit=0
+launchctl-list.txt exit=0
+processes.jsonl done
+hairpin.tsv done

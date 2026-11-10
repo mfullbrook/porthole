@@ -1,0 +1,2114 @@
+{
+  "host": "mac-mini",
+  "fqdn": "mac-mini.tail0a1b2c.ts.net",
+  "viewer": "local",
+  "scannedAt": 1791484200000,
+  "verifiedAt": 1791484200000,
+  "scanning": false,
+  "stale": false,
+  "error": null,
+  "warnings": [],
+  "csrf": "sample-csrf-token",
+  "overridesEtag": "\"sample\"",
+  "services": [
+    {
+      "key": "mac-mini/git:~/.hermes/hermes-agent:server",
+      "name": "Hermes",
+      "derivedName": "Hermes",
+      "group": "hermes-agent",
+      "project": "hermes-agent",
+      "branch": "main",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": true,
+      "hidden": null,
+      "state": "verified",
+      "url": "http://localhost:8787/",
+      "label": "localhost:8787",
+      "caveat": null,
+      "reason": null,
+      "checkedAt": 1791484200000,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [
+        {
+          "url": "http://localhost:8787/",
+          "label": "localhost:8787",
+          "state": "verified",
+          "caveat": null,
+          "kind": "localhost"
+        }
+      ],
+      "localUrl": null,
+      "fallbackUrl": "http://100.101.102.103:8787/",
+      "ports": [
+        {
+          "port": 8787,
+          "pid": 71125,
+          "process": "python",
+          "binds": [
+            "*:8787"
+          ],
+          "title": "Hermes",
+          "scheme": "http",
+          "probe": "ok",
+          "status": 200
+        }
+      ],
+      "pid": 71125,
+      "command": "/Users/alice/.hermes/hermes-agent/venv/bin/python /Users/alice/hermes-webui/server.py",
+      "cwd": "/Users/alice/.hermes/hermes-agent"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/task-runner:python3.13",
+      "name": ":57522",
+      "derivedName": ":57522",
+      "group": "task-runner",
+      "project": "task-runner",
+      "branch": "main",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "worker process (multiprocessing)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "bound to *:57522 (IPv6) only",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 57522,
+          "pid": 7916,
+          "process": "python3.13",
+          "binds": [
+            "*:57522 (IPv6)"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 57523,
+          "pid": 7916,
+          "process": "python3.13",
+          "binds": [
+            "*:57523"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 7916,
+      "command": "/Users/alice/code/acme/task-runner/.venv/bin/python3 -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=15, pipe_handle=17) --multiprocessing-fork",
+      "cwd": "/Users/alice/code/acme/task-runner"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/task-runner:python3.13",
+      "name": ":64765",
+      "derivedName": ":64765",
+      "group": "task-runner",
+      "project": "task-runner",
+      "branch": "main",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "worker process (multiprocessing)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "bound to * only",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 64765,
+          "pid": 82106,
+          "process": "python3.13",
+          "binds": [
+            "*:64765"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 64766,
+          "pid": 82106,
+          "process": "python3.13",
+          "binds": [
+            "*:64766 (IPv6)"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 82106,
+      "command": "/Users/alice/code/acme/task-runner/.venv/bin/python3 -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=15, pipe_handle=17) --multiprocessing-fork",
+      "cwd": "/Users/alice/code/acme/task-runner"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/task-runner#~/code/acme/task-runner.worktrees/search-v2:codex",
+      "name": "codex",
+      "derivedName": "codex",
+      "group": "task-runner",
+      "project": "task-runner",
+      "branch": "feat/search-v2",
+      "worktree": "search-v2",
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "CLI helper (codex)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 60298,
+          "pid": 60231,
+          "process": "codex",
+          "binds": [
+            "127.0.0.1:60298"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 60231,
+      "command": "/Users/alice/.bun/install/global/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex --yolo",
+      "cwd": "/Users/alice/code/acme/task-runner.worktrees/search-v2"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/task-runner:pinggy",
+      "name": "pinggy",
+      "derivedName": "pinggy",
+      "group": "task-runner",
+      "project": "task-runner",
+      "branch": "main",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "no page (API)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 63250,
+          "pid": 31789,
+          "process": "pinggy",
+          "binds": [
+            "127.0.0.1:63250"
+          ],
+          "title": null,
+          "scheme": "http",
+          "probe": "ok",
+          "status": 404
+        }
+      ],
+      "pid": 31789,
+      "command": "/Users/alice/.local/bin/pinggy /snapshot/cli-js/dist/index.cjs --_daemon-child",
+      "cwd": "/Users/alice/code/acme/task-runner"
+    },
+    {
+      "key": "mac-mini/git:~/projects/writer-app#~/projects/writer-app-v2:server@book/editor",
+      "name": "Book editor · Writer App",
+      "derivedName": "Book editor · Writer App",
+      "group": "writer-app",
+      "project": "writer-app",
+      "branch": "v2",
+      "worktree": "writer-app-v2",
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": null,
+      "state": "verified",
+      "url": "http://mac-mini:8844/",
+      "label": "mac-mini:8844",
+      "caveat": null,
+      "reason": null,
+      "checkedAt": 1791484200000,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [
+        {
+          "url": "http://mac-mini:8844/",
+          "label": "mac-mini:8844",
+          "state": "verified",
+          "caveat": null,
+          "kind": "direct"
+        }
+      ],
+      "localUrl": null,
+      "fallbackUrl": "http://100.101.102.103:8844/",
+      "ports": [
+        {
+          "port": 8844,
+          "pid": 59790,
+          "process": "node",
+          "binds": [
+            "100.101.102.103:8844"
+          ],
+          "title": "Book editor · Writer App",
+          "scheme": "http",
+          "probe": "ok",
+          "status": 200
+        }
+      ],
+      "pid": 59790,
+      "command": "node /Users/alice/projects/writer-app-v2/book/editor/server.js",
+      "cwd": "/Users/alice/projects/writer-app-v2/book/editor"
+    },
+    {
+      "key": "mac-mini/launchd:com.example.writer-app",
+      "name": "Writer App — Book editor",
+      "derivedName": "Writer App — Book editor",
+      "group": "writer-app",
+      "project": "writer-app",
+      "branch": "main",
+      "worktree": null,
+      "kind": "launchd",
+      "container": null,
+      "launchdLabel": "com.example.writer-app",
+      "pinned": false,
+      "hidden": null,
+      "state": "verified",
+      "url": "http://localhost:4332/",
+      "label": "localhost:4332",
+      "caveat": null,
+      "reason": null,
+      "checkedAt": 1791484200000,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [
+        {
+          "url": "http://localhost:4332/",
+          "label": "localhost:4332",
+          "state": "verified",
+          "caveat": null,
+          "kind": "localhost"
+        },
+        {
+          "url": "http://mac-mini:4330/",
+          "label": "serve :4330",
+          "state": "verified",
+          "caveat": null,
+          "kind": "serve_http"
+        }
+      ],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 4332,
+          "pid": 83884,
+          "process": "node",
+          "binds": [
+            "127.0.0.1:4332"
+          ],
+          "title": "Writer App — Book editor",
+          "scheme": "http",
+          "probe": "ok",
+          "status": 200
+        }
+      ],
+      "pid": 83884,
+      "command": "/Users/alice/.hermes/node/bin/node /Users/alice/projects/writer-app/book/editor/start.js",
+      "cwd": "/Users/alice/projects/writer-app"
+    },
+    {
+      "key": "mac-mini/docker:open-webui-hermes",
+      "name": "Open WebUI",
+      "derivedName": "Open WebUI",
+      "group": "open-webui-hermes",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "docker",
+      "container": "open-webui-hermes",
+      "launchdLabel": null,
+      "pinned": true,
+      "hidden": null,
+      "state": "verified",
+      "url": "http://localhost:6006/",
+      "label": "localhost:6006",
+      "caveat": null,
+      "reason": null,
+      "checkedAt": 1791484200000,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [
+        {
+          "url": "http://localhost:6006/",
+          "label": "localhost:6006",
+          "state": "verified",
+          "caveat": null,
+          "kind": "localhost"
+        },
+        {
+          "url": "https://mac-mini.tail0a1b2c.ts.net:6006/",
+          "label": "serve :6006",
+          "state": "verified",
+          "caveat": null,
+          "kind": "serve_https"
+        }
+      ],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 6006,
+          "pid": 39662,
+          "process": "OrbStack Helper",
+          "binds": [
+            "127.0.0.1:6006"
+          ],
+          "title": "Open WebUI",
+          "scheme": "http",
+          "probe": "ok",
+          "status": 200
+        }
+      ],
+      "pid": 39662,
+      "command": "/Applications/OrbStack.app/Contents/Frameworks/OrbStack Helper.app/Contents/MacOS/OrbStack Helper vmgr -build-id macho:05775f98b4bb3d75b88520220872c248 -handoff",
+      "cwd": "/"
+    },
+    {
+      "key": "mac-mini/port:8765",
+      "name": "remote-console · 127.0.0.1:8765",
+      "derivedName": "remote-console · 127.0.0.1:8765",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": null,
+      "state": "verified",
+      "url": "http://localhost:8765/rc",
+      "label": "localhost:8765/rc",
+      "caveat": null,
+      "reason": null,
+      "checkedAt": 1791484200000,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [
+        {
+          "url": "http://localhost:8765/rc",
+          "label": "localhost:8765/rc",
+          "state": "verified",
+          "caveat": null,
+          "kind": "localhost"
+        },
+        {
+          "url": "https://mac-mini.tail0a1b2c.ts.net/rc",
+          "label": "/rc",
+          "state": "verified",
+          "caveat": null,
+          "kind": "serve_https"
+        }
+      ],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 8765,
+          "pid": 35626,
+          "process": "node",
+          "binds": [
+            "127.0.0.1:8765"
+          ],
+          "title": "remote-console · 127.0.0.1:8765",
+          "scheme": "http",
+          "probe": "ok",
+          "status": 200
+        }
+      ],
+      "pid": 35626,
+      "command": "/Users/alice/.hermes/node/bin/node /Users/alice/code/remote-console/.output/server/index.mjs",
+      "cwd": "/"
+    },
+    {
+      "key": "mac-mini/port:51685",
+      "name": "code-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1",
+      "derivedName": "code-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "editor / IDE helper",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 51685,
+          "pid": 91247,
+          "process": "code-04c0d99f4fb0d8afe6ce4f0c58",
+          "binds": [
+            "127.0.0.1:51685"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 91247,
+      "command": "/Users/alice/.vscode-server/code-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1 --cli-data-dir /Users/alice/.vscode-server/cli agent host",
+      "cwd": "/Users/alice"
+    },
+    {
+      "key": "mac-mini/port:61029",
+      "name": "code-fc3def6774c76082adf699d366f31a557ce5573f",
+      "derivedName": "code-fc3def6774c76082adf699d366f31a557ce5573f",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "editor / IDE helper",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 61029,
+          "pid": 5189,
+          "process": "code-fc3def6774c76082adf699d366",
+          "binds": [
+            "127.0.0.1:61029"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 5189,
+      "command": "/Users/alice/.vscode-server/code-fc3def6774c76082adf699d366f31a557ce5573f --cli-data-dir /Users/alice/.vscode-server/cli agent host",
+      "cwd": "/Users/alice"
+    },
+    {
+      "key": "mac-mini/port:55241",
+      "name": "codex",
+      "derivedName": "codex",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "CLI helper (codex)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 55241,
+          "pid": 26768,
+          "process": "codex",
+          "binds": [
+            "127.0.0.1:55241"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 26768,
+      "command": "/Users/alice/.bun/install/global/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex --yolo",
+      "cwd": "/Users/alice/code/acme"
+    },
+    {
+      "key": "mac-mini/port:58741",
+      "name": "codex",
+      "derivedName": "codex",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "CLI helper (codex)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 58741,
+          "pid": 27112,
+          "process": "codex",
+          "binds": [
+            "127.0.0.1:58741"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 27112,
+      "command": "/Users/alice/.bun/install/global/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex --yolo",
+      "cwd": "/Users/alice/code/acme"
+    },
+    {
+      "key": "mac-mini/port:49431",
+      "name": "GitKraken",
+      "derivedName": "GitKraken",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "editor / IDE helper",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 49431,
+          "pid": 23054,
+          "process": "GitKraken Helper (Renderer)",
+          "binds": [
+            "127.0.0.1:49431"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 23054,
+      "command": "/Applications/GitKraken.app/Contents/Frameworks/GitKraken Helper (Renderer).app/Contents/MacOS/GitKraken Helper (Renderer) --type=renderer",
+      "cwd": "/"
+    },
+    {
+      "key": "mac-mini/port:62084",
+      "name": "GitKraken",
+      "derivedName": "GitKraken",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "editor / IDE helper",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 62084,
+          "pid": 22891,
+          "process": "GitKraken",
+          "binds": [
+            "127.0.0.1:62084"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 22891,
+      "command": "/Applications/GitKraken.app/Contents/MacOS/GitKraken",
+      "cwd": "/"
+    },
+    {
+      "key": "mac-mini/port:8642",
+      "name": "hermes_cli.main",
+      "derivedName": "hermes_cli.main",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "no page (API)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 8642,
+          "pid": 55528,
+          "process": "python",
+          "binds": [
+            "127.0.0.1:8642"
+          ],
+          "title": null,
+          "scheme": "http",
+          "probe": "ok",
+          "status": 404
+        }
+      ],
+      "pid": 55528,
+      "command": "/Users/alice/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run --external-supervisor",
+      "cwd": "/Users/alice/.hermes"
+    },
+    {
+      "key": "mac-mini/port:54930",
+      "name": "ijent-aarch64-apple-darwin-release",
+      "derivedName": "ijent-aarch64-apple-darwin-release",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "editor / IDE helper",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 54930,
+          "pid": 50571,
+          "process": "ijent-aarch64-apple-darwin-rele",
+          "binds": [
+            "127.0.0.1:54930"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 50571,
+      "command": "/Users/alice/Applications/PhpStorm.app/Contents/plugins/platform-ijent-bundledBinaries/ijent-aarch64-apple-darwin-release grpc-server --address=127.0.0.1 --use-tls --no-shutdown-on-disconnect",
+      "cwd": "/Users/alice/Applications/PhpStorm.app/Contents/bin"
+    },
+    {
+      "key": "mac-mini/port:80",
+      "name": "nginx",
+      "derivedName": "nginx",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "Herd: local .test sites only",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 80,
+          "pid": 81344,
+          "process": "nginx-arm64",
+          "binds": [
+            "100.101.102.103:80",
+            "127.0.0.1:80"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 80,
+          "pid": 81345,
+          "process": "nginx-arm64",
+          "binds": [
+            "100.101.102.103:80",
+            "127.0.0.1:80"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 80,
+          "pid": 81346,
+          "process": "nginx-arm64",
+          "binds": [
+            "100.101.102.103:80",
+            "127.0.0.1:80"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 80,
+          "pid": 81347,
+          "process": "nginx-arm64",
+          "binds": [
+            "100.101.102.103:80",
+            "127.0.0.1:80"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 80,
+          "pid": 81348,
+          "process": "nginx-arm64",
+          "binds": [
+            "100.101.102.103:80",
+            "127.0.0.1:80"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 80,
+          "pid": 81349,
+          "process": "nginx-arm64",
+          "binds": [
+            "100.101.102.103:80",
+            "127.0.0.1:80"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 80,
+          "pid": 81350,
+          "process": "nginx-arm64",
+          "binds": [
+            "100.101.102.103:80",
+            "127.0.0.1:80"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 80,
+          "pid": 81351,
+          "process": "nginx-arm64",
+          "binds": [
+            "100.101.102.103:80",
+            "127.0.0.1:80"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 80,
+          "pid": 81352,
+          "process": "nginx-arm64",
+          "binds": [
+            "100.101.102.103:80",
+            "127.0.0.1:80"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 80,
+          "pid": 81353,
+          "process": "nginx-arm64",
+          "binds": [
+            "100.101.102.103:80",
+            "127.0.0.1:80"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 81344,
+      "command": "nginx: worker process    ",
+      "cwd": "/Users/alice/Library/Application Support/Herd/bin"
+    },
+    {
+      "key": "mac-mini/port:32222",
+      "name": "OrbStack",
+      "derivedName": "OrbStack",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "OrbStack internal port",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "localhost only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 32222,
+          "pid": 39662,
+          "process": "OrbStack Helper",
+          "binds": [
+            "127.0.0.1:32222",
+            "[::1]:32222"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 39662,
+      "command": "/Applications/OrbStack.app/Contents/Frameworks/OrbStack Helper.app/Contents/MacOS/OrbStack Helper vmgr -build-id macho:05775f98b4bb3d75b88520220872c248 -handoff",
+      "cwd": "/"
+    },
+    {
+      "key": "mac-mini/port:64273",
+      "name": "OrbStack",
+      "derivedName": "OrbStack",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "OrbStack internal port",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 64273,
+          "pid": 39662,
+          "process": "OrbStack Helper",
+          "binds": [
+            "127.0.0.1:64273"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 39662,
+      "command": "/Applications/OrbStack.app/Contents/Frameworks/OrbStack Helper.app/Contents/MacOS/OrbStack Helper vmgr -build-id macho:05775f98b4bb3d75b88520220872c248 -handoff",
+      "cwd": "/"
+    },
+    {
+      "key": "mac-mini/port:5432",
+      "name": "postgres",
+      "derivedName": "postgres",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "not a web service",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "localhost only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 5432,
+          "pid": 68602,
+          "process": "postgres",
+          "binds": [
+            "[::1]:5432",
+            "127.0.0.1:5432"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 68602,
+      "command": "/Applications/Postgres.app/Contents/Versions/18/bin/postgres -D /Users/alice/Library/Application Support/Postgres/var-18 -p 5432",
+      "cwd": "/Users/alice/Library/Application Support/Postgres/var-18"
+    },
+    {
+      "key": "mac-mini/port:5990",
+      "name": "remote-dev-server",
+      "derivedName": "remote-dev-server",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "editor / IDE helper",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 5990,
+          "pid": 19595,
+          "process": "remote-dev-server",
+          "binds": [
+            "127.0.0.1:5990"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 54038,
+          "pid": 19595,
+          "process": "remote-dev-server",
+          "binds": [
+            "127.0.0.1:54038"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 63322,
+          "pid": 19595,
+          "process": "remote-dev-server",
+          "binds": [
+            "127.0.0.1:63322"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 63342,
+          "pid": 19595,
+          "process": "remote-dev-server",
+          "binds": [
+            "127.0.0.1:63342"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 64542,
+          "pid": 19595,
+          "process": "remote-dev-server",
+          "binds": [
+            "127.0.0.1:64542"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 19595,
+      "command": "/Users/alice/Applications/PhpStorm.app/Contents/bin/remote-dev-server serverMode /Users/alice/code/acme/acme-app",
+      "cwd": "/Users/alice/Applications/PhpStorm.app/Contents/bin"
+    },
+    {
+      "key": "mac-mini/port:8384",
+      "name": "syncthing",
+      "derivedName": "syncthing",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "Syncthing",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 8384,
+          "pid": 91981,
+          "process": "syncthing",
+          "binds": [
+            "127.0.0.1:8384"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 22000,
+          "pid": 91981,
+          "process": "syncthing",
+          "binds": [
+            "*:22000 (IPv6)"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 91981,
+      "command": "/Applications/Syncthing.app/Contents/Resources/syncthing/syncthing --no-browser --no-restart --logfile=default",
+      "cwd": "/"
+    },
+    {
+      "key": "mac-mini/port:8443",
+      "name": "Live Captions",
+      "derivedName": "Live Captions",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": null,
+      "state": "inferred",
+      "url": "https://localhost:8443/",
+      "label": "localhost:8443",
+      "caveat": "self-signed certificate",
+      "reason": null,
+      "checkedAt": 1791484200000,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [
+        {
+          "url": "https://localhost:8443/",
+          "label": "localhost:8443",
+          "state": "inferred",
+          "caveat": "self-signed certificate",
+          "kind": "localhost"
+        }
+      ],
+      "localUrl": null,
+      "fallbackUrl": "https://100.101.102.103:8443/",
+      "ports": [
+        {
+          "port": 8443,
+          "pid": 44607,
+          "process": "node",
+          "binds": [
+            "*:8443 (IPv6)"
+          ],
+          "title": "Live Captions",
+          "scheme": "https",
+          "probe": "ok",
+          "status": 200
+        }
+      ],
+      "pid": 44607,
+      "command": "node server.js",
+      "cwd": "/Users/alice/code/live-captions"
+    },
+    {
+      "key": "mac-mini/port:60589",
+      "name": "Visual",
+      "derivedName": "Visual",
+      "group": "Other",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "editor / IDE helper",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 60589,
+          "pid": 2406,
+          "process": "Code Helper",
+          "binds": [
+            "127.0.0.1:60589"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 2406,
+      "command": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper --type=utility --utility-sub-type=node.mojom.NodeService",
+      "cwd": "/"
+    },
+    {
+      "key": "mac-mini/git:~/code/dashboard:server",
+      "name": "Dashboard",
+      "derivedName": "Dashboard",
+      "group": "dashboard",
+      "project": "dashboard",
+      "branch": "master",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "hidden by you",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 7317,
+          "pid": 33617,
+          "process": "node",
+          "binds": [
+            "127.0.0.1:7317"
+          ],
+          "title": "Dashboard",
+          "scheme": "http",
+          "probe": "skipped",
+          "status": 200
+        }
+      ],
+      "pid": 33617,
+      "command": "node src/server.js --no-open",
+      "cwd": "/Users/alice/code/dashboard"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/utility-svc:uvicorn",
+      "name": "uvicorn",
+      "derivedName": "uvicorn",
+      "group": "utility-svc",
+      "project": "utility-svc",
+      "branch": "codex/add-api",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "no page (API)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 8000,
+          "pid": 68766,
+          "process": "python3.11",
+          "binds": [
+            "127.0.0.1:8000"
+          ],
+          "title": null,
+          "scheme": "http",
+          "probe": "ok",
+          "status": 404
+        }
+      ],
+      "pid": 68766,
+      "command": "/Users/alice/code/acme/utility-svc/.venv/bin/python .venv/bin/uvicorn api.main:app --host 127.0.0.1 --port 8000",
+      "cwd": "/Users/alice/code/acme/utility-svc"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/acme-app:codex",
+      "name": "codex",
+      "derivedName": "codex",
+      "group": "acme-app",
+      "project": "acme-app",
+      "branch": "main",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "CLI helper (codex)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 55201,
+          "pid": 63970,
+          "process": "codex",
+          "binds": [
+            "127.0.0.1:55201"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 63970,
+      "command": "/Users/alice/.bun/install/global/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex --yolo",
+      "cwd": "/Users/alice/code/acme/acme-app"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/acme-app:codex",
+      "name": "codex",
+      "derivedName": "codex",
+      "group": "acme-app",
+      "project": "acme-app",
+      "branch": "main",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "CLI helper (codex)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 55379,
+          "pid": 22879,
+          "process": "codex",
+          "binds": [
+            "127.0.0.1:55379"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 22879,
+      "command": "/Users/alice/.bun/install/global/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex --yolo",
+      "cwd": "/Users/alice/code/acme/acme-app"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/acme-app#~/code/acme/acme-app.worktrees/search-v2:codex",
+      "name": "codex",
+      "derivedName": "codex",
+      "group": "acme-app",
+      "project": "acme-app",
+      "branch": "feat/search-v2",
+      "worktree": "search-v2",
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "CLI helper (codex)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 58313,
+          "pid": 88859,
+          "process": "codex",
+          "binds": [
+            "127.0.0.1:58313"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 88859,
+      "command": "/Users/alice/.bun/install/global/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex --yolo",
+      "cwd": "/Users/alice/code/acme/acme-app.worktrees/search-v2"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/acme-app:codex",
+      "name": "codex",
+      "derivedName": "codex",
+      "group": "acme-app",
+      "project": "acme-app",
+      "branch": "main",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "CLI helper (codex)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 59961,
+          "pid": 85225,
+          "process": "codex",
+          "binds": [
+            "127.0.0.1:59961"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 85225,
+      "command": "/Users/alice/.bun/install/global/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex --yolo",
+      "cwd": "/Users/alice/code/acme/acme-app"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/acme-app:vite",
+      "name": "Laravel Vite",
+      "derivedName": "Laravel Vite",
+      "group": "acme-app",
+      "project": "acme-app",
+      "branch": "main",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": null,
+      "state": "blocked",
+      "url": null,
+      "label": "localhost:5174",
+      "caveat": null,
+      "reason": "not the app: Vite asset server",
+      "checkedAt": 1791484200000,
+      "lastSeen": null,
+      "fix": {
+        "title": "This port is the Vite asset server, not the app",
+        "commands": [],
+        "notes": [
+          "Open the Laravel app itself (its Herd site or artisan serve). Vite here only serves assets and hot reload."
+        ]
+      },
+      "routes": [
+        {
+          "url": "http://localhost:5174/",
+          "label": "localhost:5174",
+          "state": "blocked",
+          "caveat": "not the app: Vite asset server",
+          "kind": "localhost"
+        }
+      ],
+      "localUrl": null,
+      "fallbackUrl": "http://100.101.102.103:5174/",
+      "ports": [
+        {
+          "port": 5174,
+          "pid": 15088,
+          "process": "node",
+          "binds": [
+            "*:5174"
+          ],
+          "title": "Laravel Vite",
+          "scheme": "http",
+          "probe": "ok",
+          "status": 404
+        }
+      ],
+      "pid": 15088,
+      "command": "node /Users/alice/code/acme/acme-app/node_modules/.bin/vite",
+      "cwd": "/Users/alice/code/acme/acme-app"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/acme-website#~/code/acme/acme-website.worktrees/redesign:next-server",
+      "name": "Home · Acme",
+      "derivedName": "Home · Acme",
+      "group": "acme-website",
+      "project": "acme-website",
+      "branch": "redesign-2026-09-20",
+      "worktree": "redesign",
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": null,
+      "state": "verified",
+      "url": "http://localhost:3000/",
+      "label": "localhost:3000",
+      "caveat": null,
+      "reason": null,
+      "checkedAt": 1791484200000,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [
+        {
+          "url": "http://localhost:3000/",
+          "label": "localhost:3000",
+          "state": "verified",
+          "caveat": null,
+          "kind": "localhost"
+        }
+      ],
+      "localUrl": null,
+      "fallbackUrl": "http://100.101.102.103:3000/",
+      "ports": [
+        {
+          "port": 3000,
+          "pid": 33666,
+          "process": "node",
+          "binds": [
+            "*:3000 (IPv6)"
+          ],
+          "title": "Home · Acme",
+          "scheme": "http",
+          "probe": "ok",
+          "status": 200
+        }
+      ],
+      "pid": 33666,
+      "command": "next-server (v16.3.5) ",
+      "cwd": "/Users/alice/code/acme/acme-website.worktrees/redesign"
+    },
+    {
+      "key": "mac-mini/git:~/code/acme/acme-website:terminal-agent@.gstack/browse-run",
+      "name": "terminal-agent",
+      "derivedName": "terminal-agent",
+      "group": "acme-website",
+      "project": "acme-website",
+      "branch": "preview",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": "no page (API)",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "127.0.0.1 only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 64791,
+          "pid": 97419,
+          "process": "bun",
+          "binds": [
+            "127.0.0.1:64791"
+          ],
+          "title": null,
+          "scheme": "http",
+          "probe": "ok",
+          "status": 404
+        }
+      ],
+      "pid": 97419,
+      "command": "bun run /Users/alice/.agents/skills/gstack/browse/src/terminal-agent.ts",
+      "cwd": "/Users/alice/code/acme/acme-website/.gstack/browse-run"
+    },
+    {
+      "key": "mac-mini/git:~/code/puzzle-game:vite",
+      "name": "Puzzle Game",
+      "derivedName": "Puzzle Game",
+      "group": "puzzle-game",
+      "project": "puzzle-game",
+      "branch": "main",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": true,
+      "hidden": null,
+      "state": "verified",
+      "url": "http://localhost:5173/",
+      "label": "localhost:5173",
+      "caveat": null,
+      "reason": null,
+      "checkedAt": 1791484200000,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [
+        {
+          "url": "http://localhost:5173/",
+          "label": "localhost:5173",
+          "state": "verified",
+          "caveat": null,
+          "kind": "localhost"
+        }
+      ],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 5173,
+          "pid": 18246,
+          "process": "node",
+          "binds": [
+            "[::1]:5173"
+          ],
+          "title": "Puzzle Game",
+          "scheme": "http",
+          "probe": "ok",
+          "status": 200
+        }
+      ],
+      "pid": 18246,
+      "command": "node /Users/alice/code/puzzle-game/node_modules/.bin/vite",
+      "cwd": "/Users/alice/code/puzzle-game"
+    },
+    {
+      "key": "mac-mini/launchd:com.apple.controlcenter",
+      "name": "controlcenter",
+      "derivedName": "controlcenter",
+      "group": "Services",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "launchd",
+      "container": null,
+      "launchdLabel": "com.apple.controlcenter",
+      "pinned": false,
+      "hidden": "macOS system service",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "bound to * only",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 5000,
+          "pid": 1036,
+          "process": "ControlCenter",
+          "binds": [
+            "*:5000",
+            "*:5000 (IPv6)"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 7000,
+          "pid": 1036,
+          "process": "ControlCenter",
+          "binds": [
+            "*:7000",
+            "*:7000 (IPv6)"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 1036,
+      "command": "/System/Library/CoreServices/ControlCenter.app/Contents/MacOS/ControlCenter",
+      "cwd": "/"
+    },
+    {
+      "key": "mac-mini/launchd:homebrew.mxcl.mailpit",
+      "name": "Mailpit",
+      "derivedName": "Mailpit",
+      "group": "Services",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "launchd",
+      "container": null,
+      "launchdLabel": "homebrew.mxcl.mailpit",
+      "pinned": true,
+      "hidden": null,
+      "state": "verified",
+      "url": "http://localhost:8025/",
+      "label": "localhost:8025",
+      "caveat": null,
+      "reason": null,
+      "checkedAt": 1791484200000,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [
+        {
+          "url": "http://localhost:8025/",
+          "label": "localhost:8025",
+          "state": "verified",
+          "caveat": null,
+          "kind": "localhost"
+        }
+      ],
+      "localUrl": null,
+      "fallbackUrl": "http://100.101.102.103:8025/",
+      "ports": [
+        {
+          "port": 1025,
+          "pid": 6103,
+          "process": "mailpit",
+          "binds": [
+            "*:1025 (IPv6)"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        },
+        {
+          "port": 8025,
+          "pid": 6103,
+          "process": "mailpit",
+          "binds": [
+            "*:8025 (IPv6)"
+          ],
+          "title": "Mailpit",
+          "scheme": "http",
+          "probe": "ok",
+          "status": 200
+        }
+      ],
+      "pid": 6103,
+      "command": "/opt/homebrew/opt/mailpit/bin/mailpit",
+      "cwd": "/"
+    },
+    {
+      "key": "mac-mini/launchd:homebrew.mxcl.meilisearch",
+      "name": "meilisearch",
+      "derivedName": "meilisearch",
+      "group": "Services",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "launchd",
+      "container": null,
+      "launchdLabel": "homebrew.mxcl.meilisearch",
+      "pinned": false,
+      "hidden": "not a web service",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "localhost only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 7700,
+          "pid": 1799,
+          "process": "meilisearch",
+          "binds": [
+            "[::1]:7700",
+            "127.0.0.1:7700"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 1799,
+      "command": "/opt/homebrew/opt/meilisearch/bin/meilisearch --db-path /opt/homebrew/var/meilisearch/data.ms",
+      "cwd": "/opt/homebrew/var"
+    },
+    {
+      "key": "mac-mini/launchd:com.apple.rapportd",
+      "name": "rapportd",
+      "derivedName": "rapportd",
+      "group": "Services",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "launchd",
+      "container": null,
+      "launchdLabel": "com.apple.rapportd",
+      "pinned": false,
+      "hidden": "macOS system service",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "bound to * only",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 49152,
+          "pid": 925,
+          "process": "rapportd",
+          "binds": [
+            "*:49152",
+            "*:49152 (IPv6)"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 925,
+      "command": "/usr/libexec/rapportd",
+      "cwd": "/"
+    },
+    {
+      "key": "mac-mini/launchd:homebrew.mxcl.redis",
+      "name": "redis",
+      "derivedName": "redis",
+      "group": "Services",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "launchd",
+      "container": null,
+      "launchdLabel": "homebrew.mxcl.redis",
+      "pinned": false,
+      "hidden": "not a web service",
+      "state": "no_route",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "localhost only, not served",
+      "checkedAt": null,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [
+        {
+          "port": 6379,
+          "pid": 1788,
+          "process": "redis-server",
+          "binds": [
+            "127.0.0.1:6379",
+            "[::1]:6379"
+          ],
+          "title": null,
+          "scheme": null,
+          "probe": "skipped",
+          "status": null
+        }
+      ],
+      "pid": 1788,
+      "command": "/opt/homebrew/opt/redis/bin/redis-server 127.0.0.1:6379 ",
+      "cwd": "/opt/homebrew/var/db/redis"
+    },
+    {
+      "key": "mac-mini/git:~/projects/notes-app:next-server",
+      "name": "Sign in · Notes",
+      "derivedName": "Sign in · Notes",
+      "group": "notes-app",
+      "project": "notes-app",
+      "branch": "main",
+      "worktree": null,
+      "kind": "git",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": false,
+      "hidden": null,
+      "state": "verified",
+      "url": "http://localhost:3100/",
+      "label": "localhost:3100",
+      "caveat": null,
+      "reason": null,
+      "checkedAt": 1791484200000,
+      "lastSeen": null,
+      "fix": null,
+      "routes": [
+        {
+          "url": "http://localhost:3100/",
+          "label": "localhost:3100",
+          "state": "verified",
+          "caveat": null,
+          "kind": "localhost"
+        }
+      ],
+      "localUrl": null,
+      "fallbackUrl": "http://100.101.102.103:3100/",
+      "ports": [
+        {
+          "port": 3100,
+          "pid": 64204,
+          "process": "node",
+          "binds": [
+            "*:3100"
+          ],
+          "title": "Sign in · Notes",
+          "scheme": "http",
+          "probe": "ok",
+          "status": 200
+        }
+      ],
+      "pid": 64204,
+      "command": "next-server (v15.5.26) ",
+      "cwd": "/Users/alice/projects/notes-app"
+    },
+    {
+      "key": "mac-mini/git:~/code/old-thing:vite",
+      "name": "Old Thing",
+      "derivedName": "Old Thing",
+      "group": "old-thing",
+      "project": null,
+      "branch": null,
+      "worktree": null,
+      "kind": "port",
+      "container": null,
+      "launchdLabel": null,
+      "pinned": true,
+      "hidden": null,
+      "state": "not_running",
+      "url": null,
+      "label": null,
+      "caveat": null,
+      "reason": "not running",
+      "checkedAt": null,
+      "lastSeen": 1791480600000,
+      "fix": null,
+      "routes": [],
+      "localUrl": null,
+      "fallbackUrl": null,
+      "ports": [],
+      "pid": null,
+      "command": null,
+      "cwd": null
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+http://mac-mini:3000/	200	0	0.103338
+http://mac-mini:3100/	307	0	0.147372
+http://mac-mini:4330/	200	0	0.107785
+http://mac-mini:5174/	403	0	0.024022
+http://mac-mini:57522/	curl: (7) Failed to connect to mac-mini port 57522 after 7 ms: Couldn't connect to server
+000	0	0.007940
+http://mac-mini:57523/	503	0	0.007180
+http://mac-mini:64765/	503	0	0.008471
+http://mac-mini:64766/	curl: (7) Failed to connect to mac-mini port 64766 after 5 ms: Couldn't connect to server
+000	0	0.005110
+http://mac-mini:80/	404	0	0.623216
+http://mac-mini:8025/	200	0	0.025735
+http://mac-mini:8443/	curl: (52) Empty reply from server
+000	0	0.011823
+http://mac-mini:8787/	200	0	0.018486
+http://mac-mini:8844/	200	0	0.026232
+https://mac-mini.tail0a1b2c.ts.net/	200	0	0.045134
+https://mac-mini.tail0a1b2c.ts.net/rc	200	0	0.077668
+https://mac-mini.tail0a1b2c.ts.net:6006/	200	0	0.052556

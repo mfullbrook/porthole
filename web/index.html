@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="porthole-csrf" content="__PORTHOLE_CSRF__">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#eef2f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e161d" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-title" content="porthole">
+<meta name="referrer" content="no-referrer">
+<title>porthole</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  /* Critical: paint the ground before style.css lands so there is no white flash in dark mode. */
+  html { background: #eef2f5; color: #13314b; }
+  @media (prefers-color-scheme: dark) { html { background: #0e161d; color: #dbe6ef; } }
+  body { margin: 0; font: 15px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+</style>
+<link rel="stylesheet" href="/static/style.css">
+<script type="module" src="/static/app.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1 class="word">porthole</h1>
+    <span class="host" id="host" hidden></span>
+  </header>
+
+  <div class="searchbar" role="search">
+    <input id="q" type="search" placeholder="Search services…" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Search services" aria-controls="results">
+  </div>
+  <div class="meta" id="meta" hidden>
+    <span id="count"></span>
+    <span class="keys" aria-hidden="true"><kbd>↵</kbd> open in new tab · <kbd>↑↓</kbd> move · <kbd>i</kbd> details · <kbd>esc</kbd> clear</span>
+  </div>
+
+  <div id="banners" aria-live="polite"></div>
+
+  <main id="main">
+    <p class="scanning" id="scanning">Scanning…</p>
+    <section id="pinned" class="pinned" hidden aria-label="Pinned">
+      <h2 class="group">Pinned</h2>
+      <div class="tiles" id="tiles"></div>
+      <div id="tilepanel"></div>
+    </section>
+    <div id="groups"></div>
+    <section id="search" hidden>
+      <div id="results" class="list" role="list"></div>
+      <div id="nomatch" class="nomatch" hidden>
+        <p>No match.</p>
+      </div>
+      <label class="toggle" id="hiddentoggle"><input type="checkbox" id="searchhidden"> Search hidden too</label>
+    </section>
+    <details id="hidden" class="hiddenlist" hidden>
+      <summary class="group"><span>Hidden (<span id="hiddencount">0</span>)</span></summary>
+      <div class="list" id="hiddenrows"></div>
+    </details>
+  </main>
+
+  <footer class="foot">
+    <p>↗ opens in a new tab · ⓘ details</p>
+    <p id="status"></p>
+  </footer>
+</div>
+
+<div id="scrim" class="scrim" hidden></div>
+<aside id="sheet" class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden tabindex="-1">
+  <div class="sheet-grab" aria-hidden="true"></div>
+  <header class="sheet-head">
+    <h2 id="sheet-title"></h2>
+    <button type="button" class="close" id="sheet-close" aria-label="Close details">✕</button>
+  </header>
+  <div id="sheet-body"></div>
+  <div class="sheet-actions" id="sheet-actions">
+    <div class="btnrow">
+      <button type="button" class="btn" id="act-copy">Copy URL</button>
+      <button type="button" class="btn" id="act-pin">Pin</button>
+      <button type="button" class="btn" id="act-hide">Hide</button>
+    </div>
+    <form class="rename" id="rename-form">
+      <label for="rename">Rename</label>
+      <div class="renamerow">
+        <input id="rename" type="text" maxlength="120" autocomplete="off" spellcheck="false">
+        <button type="submit" class="btn">Save</button>
+        <button type="button" class="btn quiet" id="act-reset">Reset</button>
+      </div>
+    </form>
+    <p class="sheet-msg" id="sheet-msg" role="status"></p>
+  </div>
+</aside>
+<noscript><p class="wrap">porthole needs JavaScript to list services.</p></noscript>
+</body>
+</html>

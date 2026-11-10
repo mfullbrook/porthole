@@ -1,0 +1,5 @@
+user=alice uid=501
+PATH=/usr/bin:/bin:/usr/sbin:/sbin
+date=2026-10-08T15:39:22Z
+ppid_command=/sbin/launchd
+note=sanitized: real user name replaced before publishing

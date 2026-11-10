@@ -1,0 +1,40 @@
+{
+  "name": "porthole",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A launcher page for the web apps on your Mac: finds every listening port, works out a URL that opens it from each tailnet device (including tailscale serve mappings), and opens it in one tap",
+  "license": "MIT",
+  "author": "Mark Fullbrook",
+  "repository": "github:mfullbrook/porthole",
+  "homepage": "https://github.com/mfullbrook/porthole#readme",
+  "bugs": "https://github.com/mfullbrook/porthole/issues",
+  "keywords": [
+    "tailscale",
+    "tailnet",
+    "tailscale-serve",
+    "launcher",
+    "dev-server",
+    "localhost",
+    "macos",
+    "bun"
+  ],
+  "engines": {
+    "bun": ">=1.3"
+  },
+  "os": [
+    "darwin"
+  ],
+  "type": "module",
+  "bin": {
+    "porthole": "./src/cli.ts"
+  },
+  "scripts": {
+    "dev": "bun src/cli.ts run",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "MagicDNSSuffix": "tail0a1b2c.ts.net",
+  "Self": {
+    "HostName": "mac-mini",
+    "DNSName": "mac-mini.tail0a1b2c.ts.net.",
+    "TailscaleIPs": [
+      "100.101.102.103",
+      "fd7a:115c:a1e0::1234:5678"
+    ],
+    "UserID": 1234567890123456,
+    "Tags": null
+  },
+  "Owner": {
+    "LoginName": "alice@github",
+    "DisplayName": "Alice Example"
+  }
+}

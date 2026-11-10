@@ -1,0 +1,14 @@
+{
+  "name": "porthole",
+  "short_name": "porthole",
+  "description": "Open any web service on the Mac mini in a new tab.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#eef2f5",
+  "theme_color": "#13314b",
+  "icons": [
+    { "src": "/static/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ]
+}

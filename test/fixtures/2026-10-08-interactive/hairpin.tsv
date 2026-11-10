@@ -1,0 +1,16 @@
+http://mac-mini:3000/	200	0	0.076496	0
+http://mac-mini:3100/	307	0	0.057468	0
+http://mac-mini:4330/	200	0	0.047779	0
+http://mac-mini:5174/	403	0	0.025236	0
+http://mac-mini:57522/	000	0	0.004302	7
+http://mac-mini:57523/	503	0	0.007443	0
+http://mac-mini:64765/	503	0	0.007313	0
+http://mac-mini:64766/	000	0	0.004295	7
+http://mac-mini:80/	404	0	0.580078	0
+http://mac-mini:8025/	200	0	0.005898	0
+http://mac-mini:8443/	000	0	0.006837	52
+http://mac-mini:8787/	200	0	0.014700	0
+http://mac-mini:8844/	200	0	0.007983	0
+https://mac-mini.tail0a1b2c.ts.net/	200	0	0.021761	0
+https://mac-mini.tail0a1b2c.ts.net/rc	200	0	0.021219	0
+https://mac-mini.tail0a1b2c.ts.net:6006/	200	0	0.035671	0

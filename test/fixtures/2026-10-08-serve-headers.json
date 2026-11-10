@@ -1,0 +1,14 @@
+{
+  "url": "http://mac-mini.tail0a1b2c.ts.net:7443/probe?x=1",
+  "peer": {
+    "address": "127.0.0.1",
+    "family": "IPv4",
+    "port": 60267
+  },
+  "headers": {
+    "host": "mac-mini.tail0a1b2c.ts.net:7443",
+    "tailscale-headers-info": "https://tailscale.com/s/serve-headers",
+    "tailscale-user-login": "alice@github",
+    "tailscale-user-name": "Alice Example"
+  }
+}

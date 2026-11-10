@@ -1,0 +1,39 @@
+{
+  "TCP": {
+    "4330": {
+      "HTTP": true
+    },
+    "443": {
+      "HTTPS": true
+    },
+    "6006": {
+      "HTTPS": true
+    }
+  },
+  "Web": {
+    "mac-mini.tail0a1b2c.ts.net:4330": {
+      "Handlers": {
+        "/": {
+          "Proxy": "http://127.0.0.1:4332"
+        }
+      }
+    },
+    "mac-mini.tail0a1b2c.ts.net:443": {
+      "Handlers": {
+        "/": {
+          "Proxy": "http://127.0.0.1:7317"
+        },
+        "/rc": {
+          "Proxy": "http://127.0.0.1:8765/rc"
+        }
+      }
+    },
+    "mac-mini.tail0a1b2c.ts.net:6006": {
+      "Handlers": {
+        "/": {
+          "Proxy": "http://127.0.0.1:6006"
+        }
+      }
+    }
+  }
+}

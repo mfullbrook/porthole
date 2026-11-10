@@ -1,0 +1,4 @@
+user=alice uid=501
+context=interactive shell (zsh), PATH includes /opt/homebrew/bin
+date=2026-10-08T15:41:00Z
+note=sanitized: real user, PATH and parent command removed before publishing
